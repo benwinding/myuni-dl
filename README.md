@@ -1,5 +1,7 @@
 # MyUni Downloader 
 
+![the pain](https://i.imgur.com/WPtyOsO.png)
+
 So you want all the lecture notes and previous exams from MyUni. Well this little script may help you!
 
 ## What is does!
@@ -23,4 +25,9 @@ python myuni-dl.py --username a1111111 --password 'pa$$$$$$$' --course 36284
 ![demonstration](https://i.imgur.com/VQulA0R.gif)
 
 ![example of the course number](https://i.imgur.com/tx1lq8M.png)
+
 `^^` Myuni course number
+
+## Disclaimer
+
+Not affliated with Adeliade Uni or the Canvas system, just a student trying to learn ...
