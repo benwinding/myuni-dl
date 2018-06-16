@@ -12,7 +12,9 @@ Logs into the course course page at [https://myuni.adelaide.edu.au](https://myun
 
 1. install python, pip
 2. `pip install robobrowser`
-3. `git clone this`
+3. `git clone https://github.com/benwinding/myuni-dl`
+4. `cd myuni-dl`
+5. `python myuni-dl.py --username a1111111 --password 'pa$$$$$$$' --course 36284`
 
 ## Usage
 
