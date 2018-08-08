@@ -73,8 +73,11 @@ for moduleLink in moduleLinks:
     print('Opening: ' + moduleLink['aria-label'])
     browser.follow_link(moduleLink)
     try:
-        # Find download link
+        # Find link - containing words "download"
         downloadLinkRel = browser.find('a', href = re.compile(r'.*download*'))
+        # If failed, find link - containing reference to file "****.XXX"
+        if downloadLinkRel is None: 
+            downloadLinkRel = browser.find('a', href = re.compile(r'.*\.[a-z]{3,4}$'))
         fileNameWithExtension = downloadLinkRel.text.strip()
         # Check the link is the right filetype
         if args.downloadOnly != 'all' and not fileNameWithExtension.endswith(args.downloadOnly):
