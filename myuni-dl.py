@@ -39,6 +39,10 @@ def remove_prefix(text, prefix):
         return text[len(prefix):]
     return text 
 
+# Fix from: https://github.com/jmcarp/robobrowser/issues/93#issuecomment-650640171
+import werkzeug
+werkzeug.cached_property = werkzeug.utils.cached_property
+
 # Start scraping
 from robobrowser import RoboBrowser
 import re
